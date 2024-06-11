@@ -2,5 +2,15 @@
     "manifest_version": 3,
     "name": "Cadence",
     "version": "1.0.0",
-    "action": { "default_popup": "index.html" }
+    "action": { "default_popup": "index.html" },
+    "permissions": [
+    "identity",
+    "storage",
+    "https://api.spotify.com/"
+  ],
+  "oauth2": {
+    "client_id": "__SPOTIFY_CLIENT_ID__",
+    "scopes": ["user-follow-read"],
+    "redirect_uri": "__VITE_EXTENSION_ID__"
+  }
 }
