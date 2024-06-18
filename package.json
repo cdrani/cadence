@@ -24,6 +24,7 @@
     "typescript": "5.3.3"
   },
   "manifest": {
+    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmhvMBR9Z1IpXDLjPOMddI2y/hAMj+nnTacdZ4A38hGiGp8I9IusFCPdh0Qh0TewJVaoicF5pOPu5dX+0DBsmKB90usby6sALUfeNm7lCeY1/wPML982eGTZKyMMkOOiTEBIWHlfd9x316gPiaoXfN2v8Gz4GPWaJsRhzj4NNxWdqSvxdzfEA81CbXCn28gRi+yK8C1nFxejxbIeG/fXzVmTNwj0KZiCQZaAVyzDxN+g7otn2utvEymQPp8ghiO1fqFXnFZ9lXIwd9t2nb7IIVzY4hog8IAVTUs41TnjxfH4JZAowHm+RtJUGipGugOGb59bZRNXL0Ejad8vixt4G6wIDAQAB",
     "host_permissions": [
       "https://*/*"
     ],
