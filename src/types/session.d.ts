@@ -1,7 +1,10 @@
-export interface Session {
+export interface Profile {
     user_name: string,
-    expires_at: number
     is_premium: boolean,
+}
+
+export interface Session extends Profile {
+    expires_at: number
     access_token: string,
     refresh_token: string,
 }
