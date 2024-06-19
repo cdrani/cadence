@@ -1,35 +1,32 @@
 {
-  "name": "cadence",
-  "displayName": "Cadence",
-  "version": "0.0.1",
-  "description": "A basic Plasmo extension.",
-  "author": "Plasmo Corp. <foss@plasmo.com>",
-  "scripts": {
-    "dev": "plasmo dev",
-    "build": "plasmo build",
-    "package": "plasmo package"
-  },
-  "dependencies": {
-    "plasmo": "0.87.2",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
-  },
-  "devDependencies": {
-    "@ianvs/prettier-plugin-sort-imports": "4.1.1",
-    "@types/chrome": "0.0.258",
-    "@types/node": "20.11.5",
-    "@types/react": "18.2.48",
-    "@types/react-dom": "18.2.18",
-    "prettier": "3.2.4",
-    "typescript": "5.3.3"
-  },
-  "manifest": {
-    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmhvMBR9Z1IpXDLjPOMddI2y/hAMj+nnTacdZ4A38hGiGp8I9IusFCPdh0Qh0TewJVaoicF5pOPu5dX+0DBsmKB90usby6sALUfeNm7lCeY1/wPML982eGTZKyMMkOOiTEBIWHlfd9x316gPiaoXfN2v8Gz4GPWaJsRhzj4NNxWdqSvxdzfEA81CbXCn28gRi+yK8C1nFxejxbIeG/fXzVmTNwj0KZiCQZaAVyzDxN+g7otn2utvEymQPp8ghiO1fqFXnFZ9lXIwd9t2nb7IIVzY4hog8IAVTUs41TnjxfH4JZAowHm+RtJUGipGugOGb59bZRNXL0Ejad8vixt4G6wIDAQAB",
-    "host_permissions": [
-      "https://*/*"
-    ],
-    "permissions": [
-      "tabs"
-    ]
-  }
+    "name": "cadence",
+    "displayName": "Cadence",
+    "version": "0.0.1",
+    "description": "A basic Plasmo extension.",
+    "author": "Plasmo Corp. <foss@plasmo.com>",
+    "scripts": {
+        "dev": "plasmo dev",
+        "build": "plasmo build",
+        "package": "plasmo package"
+    },
+    "dependencies": {
+        "plasmo": "0.88.0",
+        "react": "18.2.0",
+        "react-dom": "18.2.0"
+    },
+    "devDependencies": {
+        "@ianvs/prettier-plugin-sort-imports": "4.1.1",
+        "@types/chrome": "0.0.258",
+        "@types/node": "20.11.5",
+        "@types/react": "18.2.48",
+        "@types/react-dom": "18.2.18",
+        "prettier": "3.2.4",
+        "typescript": "5.3.3"
+    },
+    "manifest": {
+        "key": "$CRX_KEY",
+        "host_permissions": [
+            "https://*/*"
+        ]
+    }
 }
