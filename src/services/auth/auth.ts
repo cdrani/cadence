@@ -24,13 +24,12 @@ export const authorize = async (params: AuthQueryParam): Promise<RedirectQueryPa
     })
 }
 
-export const getTokens = async (params: TokenRequestBody | RefreshedTokenRequestBody): Promise<TokenResponse> => {
+export const exchangeTokens = async (params: TokenRequestBody | RefreshedTokenRequestBody): Promise<TokenResponse> => {
     const body = new URLSearchParams(params)
     const response =  await  fetch(`${SPOTIFY_AUTH_TOKEN}`, { method: 'POST', body })
     const data = await response.json()
     return data
 }
-
 
 export const authenticate = async (): Promise<TokenResponse | AuthError> => {
     const client_id = process.env.PLASMO_PUBLIC_CLIENT_ID
@@ -57,7 +56,7 @@ export const authenticate = async (): Promise<TokenResponse | AuthError> => {
         return new MismatchStateError('Value of stored `state` does not match response `state`')
     }
 
-    return await getTokens({
+    return await exchangeTokens({
         code,
         client_id,
         redirect_uri,
