@@ -1,11 +1,11 @@
-import { AuthError, MismatchStateError } from "~types/error"
+import { AuthError, MismatchStateError } from "~types/error.d"
 import { generateState, generateCodeChallenge } from "~utils/auth"
 import type { AuthQueryParam, RedirectQueryParam, TokenResponse, TokenRequestBody, RefreshedTokenRequestBody } from './types'
 
 const SPOTIFY_AUTH_BASE = 'https://accounts.spotify.com/authorize?'
 const SPOTIFY_AUTH_TOKEN = 'https://accounts.spotify.com/api/token'
 
-export const authorize = async (params: AuthQueryParam): Promise<RedirectQueryParam> => {
+const authorize = async (params: AuthQueryParam): Promise<RedirectQueryParam> => {
     const searchParams = (new URLSearchParams(params as Required<AuthQueryParam>)).toString()
     const url = `${SPOTIFY_AUTH_BASE}${searchParams}`
 
